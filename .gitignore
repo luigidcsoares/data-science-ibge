@@ -121,6 +121,7 @@ dmypy.json
 
 pkgs/
 
-# Database files.
+# Other files.
 *.txt
 *.csv
+*.png
