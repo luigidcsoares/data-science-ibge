@@ -122,4 +122,5 @@ dmypy.json
 pkgs/
 
 # Database files.
-data/
+*.txt
+*.csv
