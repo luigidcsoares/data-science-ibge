@@ -125,3 +125,4 @@ pkgs/
 *.txt
 *.csv
 *.png
+*.invalid
