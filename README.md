@@ -1,39 +1,32 @@
 # Data Science - IBGE
 Repositório de Data Science volta a análise da saúde da população brasileira.
 
-### Instalando as dependências necessárias.
+### Clonando o projeto
 
-#### Anaconda
+- Clone o repositório:
+  ```
+  $ git clone https://github.com/luigidcsoares/data-science-ibge.git [caminho/para/projeto]
+  ```
 
-  - Instale o [miniconda](https://conda.io/en/latest/miniconda.html)
+- Instale o [pipenv](https://docs.pipenv.org/en/latest/)
 
-  - Atualize o conda:
-    ```
-    $ conda update conda
-    ```
+- Instale as dependências necessárias:
+  ```
+  $ pipenv install
+  ```
 
-  - Crie um ambiente de desenvolvimento, definindo a versão do python a ser utilizada:
-    ```
-    $ conda create -n env python=3.7.2
+### Executando algum arquivo
 
-    Se preferir, pode definir um caminho customizado:
-    $ conda create -p caminho/para/env python=3.7.2
-    ```
+- Opção 1:
+  ```
+  $ pipenv run python3 [arquivo.py]
+  $ pipenv run jupyter lab [arquivo.py]
 
-  - Ative o ambiente de desenvolvimento:
-    ```
-    $ conda activate env
+  ```
 
-    Caso tenha definido um caminho alternativo:
-    $ conda activate caminho/para/env
-    ```
-
-  - Instale as dependências utilizando o arquivo `<requirements.txt>`:
-    ```
-    $ conda install --yes --file requirements.txt
-    ```
-
-  - Para desativar o ambiente:
-    ```
-    $ conda deactivate
-    ```
+- Opção 2:
+  ```
+  $ pipenv shell
+  $ python3 [arquivo.py]
+  $ jupyter lab [arquivo.py]
+  ```
