@@ -26,4 +26,4 @@ def discretize(df, col, bins, labels=None):
     :rtype pandas.DataFrame.
     """
 
-    return pd.cut(df[col], bins, False)
+    return pd.cut(df[col], bins, False, labels=labels)
